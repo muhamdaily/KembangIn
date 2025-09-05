@@ -1,4 +1,11 @@
 @use "sass:math";
+@font-face {
+    font-family: 'MozillaText';
+    src: url('../fonts/MozillaText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 :root {
     --theme-color: #5865F2;
@@ -15,9 +22,9 @@
     --success-color: #28a745;
     --error-color: #dc3545;
     --th-border-color: #E0E0E0;
-    --title-font: 'Barlow', sans-serif;
-    --body-font: 'Roboto', sans-serif;
-    --icon-font: "Font Awesome 6 Pro";
+    --title-font: 'MozillaText', sans-serif;
+    --body-font: 'MozillaText', sans-serif;
+    --icon-font: "MozillaText";
     --main-container: 1220px;
     --container-gutters: 24px;
     --section-space: 120px;
@@ -8112,7 +8119,7 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 .hero-1 .hero-img {
     position: absolute;
     top: 60px;
-    right: 10%;
+    right: 40%;
     z-index: 3
 }
 
@@ -8126,7 +8133,7 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
     filter: blur(300px);
     border-radius: 50%;
     position: absolute;
-    right: -40px;
+    right: -20px;
     top: -180px;
     z-index: -1;
     -webkit-animation: bgColor 8s ease-in-out infinite;
@@ -8585,13 +8592,13 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 
 @media (max-width: 1700px) {
     .hero-3 .hero-img {
-        right: -7%
+        right: 5%
     }
 }
 
 @media (max-width: 1500px) {
     .hero-3 .hero-img {
-        right: -12%
+        right: 5%
     }
 
     .hero-3 .hero-social {
@@ -8601,7 +8608,7 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 
 @media (max-width: 1400px) {
     .hero-3 .hero-img {
-        right: -14%
+        right: 5%
     }
 
     .hero-3 .hero-social {
@@ -8618,7 +8625,7 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 
 @media (max-width: 1299px) {
     .hero-3 .hero-img {
-        right: -27%
+        right: 5%
     }
 
     .hero-style3 {
@@ -8629,7 +8636,7 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 
 @media (max-width: 1199px) {
     .hero-3 .hero-img {
-        right: -13%;
+        right: 5%;
         max-width: 550px
     }
 
@@ -8696,8 +8703,8 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 
 .hero-4 .hero-img {
     position: absolute;
-    top: 50px;
-    right: 7%;
+    right: 5%;
+        top: 20%;
     z-index: 2
 }
 
@@ -8763,19 +8770,21 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 
 @media (min-width: 1922px) {
     .hero-4 .hero-img {
-        right: 18%
+        right: 5%;
+        top: 20%;
     }
 }
 
 @media (max-width: 1700px) {
     .hero-4 .hero-img {
-        right: 1%
+        right: 1%;
+        top: 20%;
     }
 }
 
 @media (max-width: 1400px) {
     .hero-4 .hero-img {
-        top: 20px
+        top: 20%;
     }
 
     .hero-style4 {
@@ -8786,7 +8795,7 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 @media (max-width: 1299px) {
     .hero-4 .hero-img {
         max-width: 520px;
-        top: 80px
+        top: 20%;
     }
 
     .hero-style4 {
@@ -8796,7 +8805,8 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 
 @media (max-width: 1199px) {
     .hero-4 .hero-img {
-        right: -5%
+        right: -5%;
+        top: 20%;
     }
 
     .hero-style4 {

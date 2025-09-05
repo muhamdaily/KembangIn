@@ -18894,7 +18894,7 @@ span.select2-selection.select2-selection--single:focus {
     line-height: 1;
     margin: -0.09em 0;
     color: var(--white-color);
-    padding: 0 var(--space-x);
+    padding: var(--space-x);
     position: relative;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -21507,4 +21507,17 @@ span.select2-selection.select2-selection--single:focus {
     .space-extra2-bottom {
         padding-bottom: 70px
     }
+}
+
+.modal-content {
+    background: rgba(0, 0, 0, 0.30) !important; /* hitam semi transparan */
+    border: none; /* opsional: hilangin border */
+    box-shadow: none; /* opsional: hilangin bayangan */
+}
+
+/* Header transparan */
+.modal-header,
+.modal-footer {
+    background: transparent !important;
+    border: none !important;
 }
